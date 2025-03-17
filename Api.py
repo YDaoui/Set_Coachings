@@ -9,13 +9,12 @@ def coaching_page():
     st.title("Page de Coaching")
     st.write("Contenu de la page de coaching...")
 
-# 🎨 Initialisation de l'état de session
 if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
 if "user_info" not in st.session_state:
     st.session_state.user_info = None
 
-# 🎨 Interface de connexion
+
 if not st.session_state.logged_in:
     login_page()
 else:
